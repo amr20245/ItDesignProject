@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product Finder</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
-        <header>
-            <h1>Welcome to Product Finder</h1>
-            <p>Find the best deals on products near you or online!</p>
-        </header>
+<body>
+    <header>
+        <h1>Welcome to Product Finder</h1>
+        <p>Find the best deals on products near you or online!</p>
+    </header>
 
-        <main>
-            <section class="search-bar">
-                <input type="text" id="searchQuery" placeholder="Enter a product name">
-                <button onclick="searchProducts()">Search</button>
-            </section>
+    <main>
+        <section class="search-bar">
+            <input type="text" id="searchQuery" placeholder="Enter a product name">
+            <button onclick="searchProducts()">Search</button>
+        </section>
 
-            <section>
-                <!-- Location, Prices, Category, Retailer buttons/inputs -->
-            </section>
+        <section class="user-preferences">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter location">
 
-            <section id="searchResults"></section>
-        </main>
+            <label for="priceRange">Price Range:</label>
+            <input type="text" id="priceRange" placeholder="e.g., 10-50">
 
-        <!-- Enter for email notifications -->
-        <footer class="footer-bar">
-            <p>Stay on top of the best deals with email notification!</p>
-            <input type="text" id="footer-bar" placeholder="Enter email">
-            <button onclick="">Enter</button>
-        </footer>
+            <label for="category">Category:</label>
+            <input type="text" id="category" placeholder="e.g., Electronics">
 
-        <script src="script.js"></script>
-    </body>
+            <label for="retailer">Retailer:</label>
+            <input type="text" id="retailer" placeholder="Preferred retailer">
+        </section>
+
+        <section id="searchResults" class="search-results"></section>
+    </main>
+
+    <footer class="footer-bar">
+        <p>Stay on top of the best deals with email notifications!</p>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+        <button onclick="subscribeEmail()">Subscribe</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
