@@ -78,6 +78,25 @@ button {
     margin: 10px 0;
 }
 
+/* Status Colors */
+.out-of-stock {
+    background-color: #f8d7da; /* Light red */
+    border: 1px solid #f5c2c7;
+    color: #842029;
+}
+
+.best-price {
+    background-color: #fff3cd; /* Light yellow */
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+.closest-store {
+    background-color: #d1e7dd; /* Light green */
+    border: 1px solid #badbcc;
+    color: #0f5132;
+}
+
 /* Footer */
 .footer-bar {
     background-color: #333;
