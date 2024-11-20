@@ -25,6 +25,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    flex-direction: column;
 }
 
 .search-bar input,
@@ -107,4 +108,39 @@ button {
 
 .footer-bar input {
     margin-right: 10px;
+}
+
+.store-availability {
+    padding-right: 5px;
+    text-align: right;
+    color: gray;
+}
+
+.suggestions-container {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.suggestions {
+    margin: 2% 25%;
+    width: 50%;
+    background-color: #fff;
+    padding: 0;
+    display: none;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.suggestions li {
+    columns: 2;
+    padding: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.suggestions li:hover {
+    background-color: #f2f2f2;
 }

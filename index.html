@@ -15,10 +15,14 @@
 
     <main>
         <section class="search-bar">
-            <input type="text" id="searchQuery" placeholder="Enter a product name">
-            <button onclick="searchProducts()">Search</button>
-        </section>
+            <div>
+                <input type="text" id="searchQuery" placeholder="Enter a product name">
+                <button onclick="searchProducts()">Search</button>
+            </div>
 
+            
+        </section>
+    
         <section class="user-preferences">
             <label for="location">Location:</label>
             <input type="text" id="location" placeholder="Enter location">
@@ -32,7 +36,9 @@
             <label for="retailer">Retailer:</label>
             <input type="text" id="retailer" placeholder="Preferred retailer">
         </section>
-
+<div class="suggestions-container">
+                <ul class="suggestions"></ul>
+            </div>
         <section id="searchResults" class="search-results"></section>
     </main>
 
